@@ -10,10 +10,13 @@ public class Customers {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public long id;
 
-    @Column(name="USERNAME")
-    public String username;
+    @Column(name="NAME")
+    public String name;
     @Column(name="PASSWORD")
     public String password;
+
+    @Column(name = "EMAIL")
+    public String email;
 
     public long getId() {
         return id;
@@ -23,12 +26,12 @@ public class Customers {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
@@ -37,5 +40,13 @@ public class Customers {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
