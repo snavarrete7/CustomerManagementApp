@@ -1,0 +1,10 @@
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (1, 'Drugi', 'rR1`{=WA756');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (2, 'Chancey', 'nH3,xIK#N|');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (3, 'Anabella', 'iS0_d@nBOR#(wDH');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (4, 'Kelby', 'iX9.xN,iypVghOy~');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (5, 'Dennison', 'cZ5<''d2W');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (6, 'Flossi', 'tB4/W38&.k)b?');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (7, 'Cchaddie', 'eB4`(|P1');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (8, 'Rustie', 'cC7.*Me&');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (9, 'Grata', 'dT3,rM8V?duK');
+insert into CUSTOMERS (ID, USERNAME, PASSWORD) values (10, 'Candis', 'dH0?L?KG');
