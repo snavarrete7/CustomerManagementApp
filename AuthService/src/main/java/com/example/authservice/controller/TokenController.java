@@ -53,7 +53,7 @@ public class TokenController {
     public boolean checkCustomer(Customers customer){
        Customers responseCustomer = null;
         try {
-            URL url = new URL("http://localhost:8080/api/customers/byname/" + customer.getName());
+            URL url = new URL("http://localhost:8080/api/customers/search/" + customer.getName());
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
@@ -80,11 +80,7 @@ public class TokenController {
             e.printStackTrace();
         }
 
-        if(responseCustomer.getName().equalsIgnoreCase(customer.getName()) && responseCustomer.getPassword().equalsIgnoreCase(customer.getPassword())){
-            return true;
-        }else{
-            return false;
-        }
+        return responseCustomer.getName().equalsIgnoreCase(customer.getName()) && responseCustomer.getPassword().equalsIgnoreCase(customer.getPassword());
     }
 
 }

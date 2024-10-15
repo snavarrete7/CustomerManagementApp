@@ -43,7 +43,7 @@ public class CustomerController {
     }
 
 
-    @GetMapping("/byname/{username}")
+    @GetMapping("/search/{username}")
     public ResponseEntity<?> lookupCustomerByNameGet(@PathVariable("username") String username,
                                                      UriComponentsBuilder uri) {
         Iterator<Customers> customers = customerRepository.findAll().iterator();
