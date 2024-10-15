@@ -37,7 +37,6 @@ public class TokenController {
             String tokenString = JWTSupport.createToken(scopes);
             Token token = new Token(tokenString);
             response = ResponseEntity.ok(token);
-
         }else{
             if(checkCustomer(customer)){
                 List<String> scopes = Arrays.asList("read:customers");

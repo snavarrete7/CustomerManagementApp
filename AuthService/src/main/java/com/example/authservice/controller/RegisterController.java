@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 
 @RestController
 @RequestMapping("/register")
@@ -43,6 +45,18 @@ public class RegisterController {
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "application/json");
                 conn.setDoOutput(true);
+
+                List<String> scopes = null;
+                if(customer.getName().equalsIgnoreCase("admin")){
+                    scopes = Arrays.asList("read:customers", "write:customers");
+                }else{
+                    scopes = Arrays.asList("read:customers");
+                }
+
+                String tokenString = JWTSupport.createToken(scopes);
+                conn.setRequestProperty("Authorization", "Bearer " + tokenString);
+
+
                 OutputStream os = conn.getOutputStream();
                 os.write(jsonCustomer.getBytes());
                 os.flush();
