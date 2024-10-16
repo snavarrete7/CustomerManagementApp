@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./gradlew clean bootJar
+RUN ./gradlew bootJar
 
-COPY build/libs/*.jar app.jar
+COPY build/libs/CustomerService-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
