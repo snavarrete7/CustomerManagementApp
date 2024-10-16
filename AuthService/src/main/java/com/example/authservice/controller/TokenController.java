@@ -23,7 +23,7 @@ public class TokenController {
 
     @GetMapping
     public String getToken(){
-        return "secret-token-12345";
+        return "Token service running";
     }
 
     @PostMapping

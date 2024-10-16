@@ -57,7 +57,6 @@ public class AuthFilter extends OncePerRequestFilter {
     private List<String> validateToken(String token){
         List<String> scopeList = null;
         try {
-
             Algorithm algorithm = Algorithm.HMAC256("secret");
             DecodedJWT jwt = JWT.require(algorithm)
                     .build()
