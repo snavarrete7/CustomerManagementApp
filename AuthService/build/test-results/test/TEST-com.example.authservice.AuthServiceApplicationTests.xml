@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.authservice.AuthServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-16T12:57:25" hostname="CYXVLQ4M3H" time="0.8">
+  <properties/>
+  <testcase name="validToken()" classname="com.example.authservice.AuthServiceApplicationTests" time="0.8"/>
+  <system-out><![CDATA[14:57:20.892 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.authservice.AuthServiceApplicationTests]: AuthServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:57:21.004 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.authservice.AuthServiceApplication for test class com.example.authservice.AuthServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-10-16T14:57:21.471+02:00  WARN 25399 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/snavarre/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/Users/snavarre/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-10-16T14:57:21.498+02:00  INFO 25399 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : Starting AuthServiceApplicationTests using Java 17.0.6 with PID 25399 (started by snavarre in /Users/snavarre/Library/CloudStorage/OneDrive-AutomaticDataProcessingInc/Escritorio/CustomerManagementApp/AuthService)
+2024-10-16T14:57:21.501+02:00  INFO 25399 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-10-16T14:57:22.520+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-16T14:57:22.522+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-10-16T14:57:22.561+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2024-10-16T14:57:22.622+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-16T14:57:22.623+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16T14:57:22.637+02:00  INFO 25399 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2024-10-16T14:57:23.205+02:00  INFO 25399 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-16T14:57:23.402+02:00  INFO 25399 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (característica no soportada)
+2024-10-16T14:57:23.403+02:00  INFO 25399 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@49c099b
+2024-10-16T14:57:23.405+02:00  INFO 25399 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-16T14:57:23.467+02:00  INFO 25399 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16T14:57:23.515+02:00  INFO 25399 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-16T14:57:23.556+02:00  INFO 25399 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-16T14:57:23.791+02:00  INFO 25399 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16T14:57:24.504+02:00  INFO 25399 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16T14:57:24.531+02:00  INFO 25399 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16T14:57:24.760+02:00  WARN 25399 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16T14:57:25.434+02:00  INFO 25399 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : Started AuthServiceApplicationTests in 4.289 seconds (process running for 5.536)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

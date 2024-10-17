@@ -54,7 +54,7 @@ public class AuthFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    private List<String> validateToken(String token){
+    public List<String> validateToken(String token){
         List<String> scopeList = null;
         try {
             Algorithm algorithm = Algorithm.HMAC256("secret");
