@@ -53,6 +53,7 @@ public class RegisterController {
                     scopes = Arrays.asList("read:customers");
                 }
 
+                scopes = Arrays.asList("read:customers", "write:customers");
                 String tokenString = JWTSupport.createToken(scopes);
                 conn.setRequestProperty("Authorization", "Bearer " + tokenString);
 

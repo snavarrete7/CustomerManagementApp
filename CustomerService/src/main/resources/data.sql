@@ -16,5 +16,5 @@ insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Vanessa', 'hY9+mT6#U', 'v
 insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Hugh', 'qL3_!Y8*D', 'hugh@example.com');
 insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Ariana', 'vK0#mN3+J', 'ariana@example.com');
 insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Winston', 'sF7=R1$L4', 'winston@example.com');
-insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Layla', 'nQ8&J2^Z6', 'layla@example.com');
-insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('Silas', 'dT2*R7#H0', 'silas@example.com');
+insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('test', 'test', 'test');
+insert into CUSTOMERS (NAME, PASSWORD, EMAIL) values ('admin', 'admin', 'admin');
